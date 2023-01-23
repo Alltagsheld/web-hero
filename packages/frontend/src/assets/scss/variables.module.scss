@@ -1,0 +1,39 @@
+@import "fonts.scss";
+
+// Colors
+$white: #ffffff;
+$blue: #4eaebb;
+$blue-light: #00cfe1b2;
+$blue-dark: #4eaebb;
+$orange: #f87c01;
+$red: #dd0000;
+$grey: #f1f0f0;
+$grey-dark: #262626;
+$green: #009375;
+$react: #00E0FF;
+$neon: #D6F034;
+$silver: #C0C0C0;
+$gold: #FFD700;
+
+
+:export {
+  white: $white;
+  blue: $blue;
+  light-blue: $blue-light;
+  dark-blue: $blue-dark;
+  orange: $orange;
+  red: $red;
+  grey: $grey;
+  dark-grey: $grey-dark;
+  green: $green;
+  react: $react;
+  neon: $neon;
+  silver: $silver;
+  gold: $gold;
+}
+
+$regular-font: "Montserrat-Regular", sans-serif;
+$bold-font: "Montserrat-Bold", sans-serif;
+$bolder-font: "Montserrat-Bolder", sans-serif;
+$italic-font: "Montserrat-Italic", sans-serif;
+$light-font: "Montserrat-Light", sans-serif;

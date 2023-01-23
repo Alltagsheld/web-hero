@@ -1,0 +1,89 @@
+entity: Task
+items:
+  task0:
+    title: Know your Boundaries
+    description: "Even superheroes must work together, or call for help sometimes. Reacto needs to know when to call which Hero 
+    for aid. He has decided to build an interface that renders cards of known heroes with their names and superpowers.
+    The card component should receive a list of superheroes as a prop and display each superhero's name and a list of their superpowers.\n\n
+
+    Acceptance Critera (AC):\n
+    - Use React and TypeScript to build the component.\n
+    - The component should accept a superheroes prop of type Array and use it to render a list of superhero cards.\n"
+    shortDescription: "Create a view that displays cards of various superheroes."
+    status: To Do
+    estimation: "3SP"
+    gainedEP: 5000
+    labels:
+      - '@label0'
+      - '@label1'
+      - '@label2'
+  task1:
+    title: Physical Preparation
+    description: "Reacto has to undergo physical preparations before taking on the villains of Metropolis. He aims to build a battle simulator that let's him fight 
+    against known foes to discover and work on his weaknesses, or let two opponents fight to see who is stronger.\n\n
+    
+    Acceptance Criteria (AC):\n
+    - The application should display a list of available villains and their traits and allow the user to select two of them to engage in a battle.\n 
+    - the application renders out the names of the two contestants, eg: 'Reacto VS The Penguin!'
+    - The application should then simulate the battle by a click of a button and display the results.\n
+    - Each villain, as well as Reacto will be measured by certain skills (strength, speed and intelligence).\n
+    - To calculate the win chance, Reacto came up with the following formular: '100 - (intelligence * 2 + speed - 1/3* strength)'\n
+    - another click of the button will reset the application and allow the user to select two new opponents."
+    shortDescription: "Create a simple battle simulator and calculate the winner of two opponents!"
+    status: To Do
+    estimation: "5SP"
+    gainedEP: 8000
+    labels:
+      - '@label0'
+      - '@label1'
+      - '@label2'
+  task2:
+    title: Sandbox
+    description: "This task is a sandbox challenge with a minor test to explore the application. 
+    Solve the test to pass this challenge.\n\n
+    AC:\n
+    - create component that renders a html element with the attribute 'data-testid={'myDiv'}\n"
+    shortDescription: A sandbox challenge with a minor test to explore the application
+    status: To Do
+    estimation: "1SP"
+    gainedEP: 3000
+    labels:
+      - '@label0'
+      - '@label1'
+      - '@label2'
+  task3: 
+    title: Keep your enemies close
+    description: "Reacto's interface was a success and his knowledge grows bigger every day. Since Reacto started roaming the streets to gain insights on his foes,
+    reacto needs an application that allows him to upload profiles of his enemies directly.\n\n
+
+    Acceptance Criteria (AC):\n
+    - The application should render a button, that, when pressed, enables the user to upload a picture.\n
+    - The application should render a preview of that image.\n
+    - An Image cannot be uploaded if no preview was displayed.\n
+    - The uploaded file is converted to an URL using the given function 'ReadFileAsDataURL' in 'src/utils/ReadFileAsDataURL'
+    - The application should render a component that let's the user add a name and a description to an uploaded picture.\n"
+    shortDescription: create an image upload
+    status: To Do
+    estimation: "3SP"
+    gainedEP: 6000
+    labels:
+      - '@label0'
+      - '@label1'
+      - '@label2'
+  task4:
+    title: Know your enemies
+    description: "Stylus started threatening the peace of the city long ago. His marouders plunder the city and harm it's inhabitants. Reacto aims on gaining more understanding about his foes.
+    He decides to build an interface, that allows him to go through the marouders known to him.\n\n
+
+    Acceptance Criteria (AC):\n
+    - The application should render a gallery view of given static images.\n
+    for testing reasons, please add the attribute 'data-testid={'gallery-view'}' to your component wrapper."
+    shortDescription: create a gallery view
+    status: To Do
+    estimation: "2SP"
+    gainedEP: 3000
+    labels:
+      - '@label0'
+      - '@label1'
+      - '@label2'
+  

@@ -1,0 +1,21 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+
+.container{
+    @extend .flexContainer;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 15%;
+    gap: 1em;
+    border: 4px solid $white;
+    transform: translateY(8%);
+}
+
+.barContainer {
+    @extend .flexContainer;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    background-color: rgba(0, 17, 95, 0.5);
+    padding: 1em;
+}

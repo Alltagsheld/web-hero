@@ -1,0 +1,21 @@
+entity: User
+items:
+  user0:
+    name: testUser
+    email: testUser
+    password: test
+    totalEP: 0
+    htmlEp: 0
+    cssEp: 0
+    tsEp: 0
+    testEp: 0
+    gitEp: 0
+    quests: 
+      - '@quest0'
+      - '@quest1'
+      - '@quest2'
+    passwordChangedAt: "2023-01-05 19:12:18"
+    createdAt: "2023-01-05 19:13:18.511978"
+    updatedAt: "2023-01-05 19:13:18.511978"
+    badges: 
+      - '@badge1'

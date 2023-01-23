@@ -1,0 +1,44 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+
+.challengeCardContainer{
+    @extend .flexContainer;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    color: black;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+    filter: drop-shadow(4px 4px 4px rgba(227, 227, 227, 0.75));
+    h1 {
+        align-items: flex-start;
+        margin-left: 0.5em;
+    }
+    h3 {
+        color:gray;
+        margin-left: 0.5em;
+    }
+    &:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+}
+
+.disabled {
+    @extend .challengeCardContainer;
+    background-color: rgba(189, 189, 189, 0.75);
+    h2 {
+        color: rgba(100, 100, 100, 0.75);
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.finished {
+    @extend .disabled;
+    color: rgba(79, 112, 86, 0.75);
+}

@@ -1,0 +1,38 @@
+.SignupCardContainer {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+.CustomForm {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.HeaderContainer {
+    text-align: center;
+    color: black;
+}
+
+.LoginLink {
+    text-decoration: none;
+    color: #777;
+    cursor: pointer; 
+
+    &:hover {
+        color: #777;
+    }
+    & span {
+        color: #555;
+        text-decoration: underline;
+    }
+}
+
+.ButtonContainer {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}

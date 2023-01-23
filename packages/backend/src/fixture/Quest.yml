@@ -1,0 +1,20 @@
+entity: Quest
+items:
+  quest0:
+    title: Rise of Reacto
+    description: A new hero watches over Metropolis. Can Reacto prove himself?
+    tasks:
+      - '@task0'
+      - '@task1'
+  quest1:
+    title: Testing
+    description: Here to test the flow of the application
+    tasks:
+      - '@task2'
+  quest2:
+    title: The horros of Stylus
+    description: Stylus threathens the people of Metropolis. Reacto can't let this happen.
+    tasks:
+      - '@task3'
+      - '@task4'
+

@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "init": "lerna bootstrap",
+    "start": "lerna run start",
+    "build": "lerna run build",
+    "watch": "lerna run watch --stream",
+    "schema:sync": "lerna run schema:sync --scope=web-hero-backend --stream",
+    "fixtures": "lerna run fixtures --scope=web-hero-backend --stream"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

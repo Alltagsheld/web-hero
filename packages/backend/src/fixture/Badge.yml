@@ -1,0 +1,14 @@
+entity: Badge
+items:
+  badge0:
+    name: Strong Arm
+    description: Received for solving more than two challenges in a day.
+  badge1:
+    name: True Hero
+    description: Received for solving a challenge for two days in a row.
+  badge2:
+    name: Legend in the making
+    description: Received for solving your first challenge.
+  badge3:
+    name: Warrior of Justice
+    description: Received for gaining your first level up.

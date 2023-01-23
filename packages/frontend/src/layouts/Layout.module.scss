@@ -1,0 +1,118 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+@import "src/components/CustomButton/CustomButton.module.scss";
+
+.dayContainer {
+    @extend .flexContainer;
+    width: 100%;
+    height: 100%;
+    background: no-repeat url("../assets/Background.png");
+    //background: linear-gradient(180deg, #252525 20.83%, rgba(37, 37, 37, 0.53) 100%), no-repeat url("../../assets/Background.png");
+    background-size: 100% 100%;
+    color: white;
+    position: relative;
+}
+
+.successContainer {
+    @extend .dayContainer;
+    background: no-repeat url("../assets/challengeSuccess.png");
+    background-size: 100% 100%;
+}
+
+.nightContainer {
+    @extend .dayContainer;
+    flex-direction: column;
+    background: no-repeat url("../assets/ChallengeBackground.png");
+    background-size: 100% 100%;
+}
+
+.contentContainer {
+    @extend .flexContainer;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2em;
+    height: 100%;
+}
+
+.challengeBoard {
+    height: 60%;
+}
+
+.header {
+    color: white;
+    margin: 1.5em;
+    position: absolute;
+    top: 8px;
+}
+
+
+.subHeader {
+    color: white;
+    margin: 1.5em;
+    position: absolute;
+    top: 2.5em;
+}
+
+.levelProgress {
+    @extend .flexContainer;
+    flex-direction: column;
+    position: relative;
+    align-self: flex-end;
+    margin: 1em;
+    width: 22.5%;  
+}
+.hero {
+    height: 77%;
+    transform: translateY(5%);
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0em;
+    gap: 0.5em;
+    margin-bottom: 2em;
+}
+
+.backButton {
+    @extend .iconButton;
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+}
+
+.continueButton {
+    @extend .iconButton;
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+}
+
+.filter {
+    @extend .flexContainer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #252525 20.83%, rgba(37, 37, 37, 0.53) 100%);
+    z-index: 0;
+}
+.skillButton {
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+    &:hover {
+        opacity: 0.8;
+        transition: 0.5s;
+        background-color: transparent;
+    }
+    &:active {
+        transform: scale(1.05);
+        background-color: transparent;
+    }
+    background-color: transparent;
+    border: 2px solid white;
+}

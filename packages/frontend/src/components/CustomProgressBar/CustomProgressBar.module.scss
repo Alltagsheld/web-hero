@@ -1,0 +1,27 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+
+.container {
+    @extend .flexContainer;
+    width: 100%;  
+    gap: 1em;
+    h3 {
+        margin: 0;
+    }
+}
+
+.textContainer {
+    @extend .flexContainer;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.bar {
+    height: 1.5em;
+    width: 60%;
+    border: 2px solid white;
+}
+.text {
+    width: 5em;
+    font-weight: bold;
+}

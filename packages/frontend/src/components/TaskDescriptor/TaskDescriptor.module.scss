@@ -1,0 +1,81 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+
+.container {
+    @extend .flexContainer;
+    position: relative;
+    background-color: #252525;
+    color: white;
+    height: 30px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+    &:hover {
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
+.filterContainer {
+    @extend .flexContainer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 37, 37, 0.7);
+    z-index: 99;
+}
+
+.descriptionContainer {
+    @extend .flexContainer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: no-repeat url("../../assets/taskBackground.png");
+    //background: linear-gradient(180deg, #252525 20.83%, rgba(37, 37, 37, 0.53) 100%), no-repeat url("../../assets/Background.png");
+    background-size: 100% 100%;
+    border: 2px solid white;
+}
+
+.overlay {
+    clip-path: polygon(0 0, 61% 0, 48% 100%, 0% 100%);
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.textContainer {
+    @extend .flexContainer;
+    flex-direction: column;
+    position: relative;
+    width: 55%;
+    margin: 1em;
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 2em;
+}
+
+.customClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+}

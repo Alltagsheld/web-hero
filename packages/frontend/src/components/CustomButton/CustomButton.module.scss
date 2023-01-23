@@ -1,0 +1,27 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+
+.iconButton {
+    @extend .flexContainer;
+    background-color: transparent !important;
+    border: 4px solid $white;
+    color: $neon;
+    h2 {
+        margin: 0;
+    }
+    &:hover {
+        color: $white;
+        border-color: $white;
+        transition: 0.5s;
+    }
+}
+.textButton {
+    @extend .iconButton;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+.image {
+    height: 40px;
+    width: 40px;
+    object-fit: scale-down;
+}

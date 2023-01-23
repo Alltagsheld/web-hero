@@ -1,0 +1,48 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.topPane {
+    @extend .flexContainer;
+    height: 100%;
+    width: 100%;
+    transition: 0.35s;
+    overflow: hidden;
+}
+
+.bottomPane {
+    height: 100%;
+    width: 100%;
+    transition: 0.35s;
+}
+
+.preview {
+    height: 100%;
+    width: 50%;
+}
+
+.spWrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.console {
+    height: 100% !important;
+}
+
+.tests {
+    height: 100% !important;
+}
+
+.sideBar {
+    @extend .flexContainer;
+    flex-direction: column;
+    justify-content: start;
+    height: 100% !important;
+    background-color: #151515;
+    transition: 0.35s;
+}

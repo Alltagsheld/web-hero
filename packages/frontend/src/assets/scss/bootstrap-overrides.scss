@@ -1,0 +1,25 @@
+@import "src/assets/scss/variables.module.scss";
+
+//import functions and variables. Do not change the order as variables uses functions
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+  "kikublue": $kiku-blue-dark,
+  "kikulightblue": $kiku-blue-light,
+  "kikuorange": $kiku-orange,
+  "kikured": $kiku-red,
+  "kikuwhite": $kiku-white,
+);
+
+$custom-colors: (
+    "kikublue": $kiku-blue-dark,
+    "kikulightblue": $kiku-blue-light,
+    "kikuorange": $kiku-orange,
+    "kikured": $kiku-red,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+$colors: map-merge($custom-colors, $colors);
+
+@import "node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,30 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+
+.container {
+    @extend .flexContainer;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: no-repeat url("../../assets/ChallengeBackground.png");
+    //background: linear-gradient(180deg, #252525 20.83%, rgba(37, 37, 37, 0.53) 100%), no-repeat url("../../assets/Background.png");
+    background-size: cover;
+    color: white;
+}
+
+.filter {
+    @extend .flexContainer;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #252525 20.83%, rgba(37, 37, 37, 0.53) 100%);
+}
+
+.header {
+    color: white;
+    margin-bottom: 2em;
+    z-index: 99;
+}

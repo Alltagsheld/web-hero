@@ -1,0 +1,11 @@
+entity: Label
+items:
+  label0:
+    value: Typescript
+  label1:
+    value: CSS
+  label2:
+    value: HTML
+  label3:
+    value: Testing
+    

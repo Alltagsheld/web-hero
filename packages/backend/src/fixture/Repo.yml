@@ -1,0 +1,158 @@
+entity: Repo
+items:
+  file0:
+    task: '@task0'
+    fileName: /src/components/HeroCards/HeroCards.tsx
+    content: "import \"src/components/HeroCards/styles.scss\";\n\ntype Superhero = {\n  name: string,\n  powers: string[],\n};\n\ntype SuperheroListProps = {\n  superheroes: Superhero[],\n};\n\nexport const HeroCards: React.FC<SuperheroListProps> = ({ superheroes }) => {\n  return <div>room for your code</div>;\n};\n"
+  file1:
+    task: '@task0'
+    fileName: /src/components/HeroCards/styles.scss
+    content: ""
+  file2:
+    task: '@task0'
+    fileName: /src/global.scss
+    content: "body, html { height: 100%; } #root {height: 100%; width: 100%; display: flex; flex-direction: column;}"
+  file3:
+    task: '@task0'
+    fileName: /public/index.html
+    content: <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" /></head><body><div id="root"/></body></html>
+  file4:
+    task: '@task0'
+    fileName: /tsconfig.json
+    content: '{"compilerOptions": {"baseUrl": ".","target": "es5","lib": ["dom","dom.iterable","esnext"],"allowJs": true,"skipLibCheck": true,"esModuleInterop": true,"allowSyntheticDefaultImports": true,"strict": true,"forceConsistentCasingInFileNames": true,"noFallthroughCasesInSwitch": true,"module": "esnext","moduleResolution": "node","resolveJsonModule": true,"isolatedModules": true,"noEmit": true,"jsx": "react-jsx"},"include": ["src"]}'
+  file5:
+    task: '@task0'
+    fileName: /src/App.tsx
+    content: "import 'bootstrap/dist/css/bootstrap.min.css'; import 'src/global.scss'; export default function App () {  return <div>Room for Your Code</div> }"
+  file6:
+    task: '@task0'
+    fileName: /src/index.tsx
+    content: "import React from \"react\";\nimport { createRoot } from 'react-dom/client';\nimport \"src/global.scss\";\nimport App from \"src/App\";\n\nconst container = document.getElementById('root') as HTMLElement;\nconst root = createRoot(container);\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n"
+  file7:
+    task: '@task0'
+    fileName: /src/components/Card/Card.tsx
+    content: "import 'src/components/Card/styles.scss';"
+  file8:
+    task: '@task0'
+    fileName: /src/components/Card/styles.scss
+    content: ""
+  file9:
+    task: '@task1'
+    fileName: /src/components/BattleSimulator/BattleSimulator.tsx
+    content: "import \"src/components/BattleSimulator/styles.scss\";\ntype Contestant = {\n  name: string;\n  strength: number;\n  intelligence: number;\n  speed: number;\n};\n\ninterface BattleInterface {\n  contestants: Contestant[];\n}\n\nexport const BattleSimulator: React.FC<BattleInterface> = ({ contestants }) => {\n  return <div>Room for your code</div>\n}\n"
+  file10:
+    task: '@task1'
+    fileName: /src/components/BattleSimulator/styles.scss
+    content: ""
+  file11:
+    task: '@task1'
+    fileName: /src/global.scss
+    content: "body, html { height: 100%; } #root {height: 100%; width: 100%; display: flex; flex-direction: column;}"
+  file12:
+    task: '@task1'
+    fileName: /public/index.html
+    content: <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" /></head><body><div id="root"/></body></html>
+  file13:
+    task: '@task1'
+    fileName: /tsconfig.json
+    content: '{"compilerOptions": {"baseUrl": ".","target": "es5","lib": ["dom","dom.iterable","esnext"],"allowJs": true,"skipLibCheck": true,"esModuleInterop": true,"allowSyntheticDefaultImports": true,"strict": true,"forceConsistentCasingInFileNames": true,"noFallthroughCasesInSwitch": true,"module": "esnext","moduleResolution": "node","resolveJsonModule": true,"isolatedModules": true,"noEmit": true,"jsx": "react-jsx"},"include": ["src"]}'
+  file14:
+    task: '@task1'
+    fileName: /src/App.tsx
+    content: "import \"bootstrap/dist/css/bootstrap.min.css\";\nimport \"src/global.scss\";\nimport { contestants } from \"src/contestants.ts\";\nimport { BattleSimulator } from \"src/components/BattleSimulator/BattleSimulator.tsx\";\n\nexport default function App() {\n  return <BattleSimulator contestants={contestants}/>;\n}\n"
+  file15:
+    task: '@task1'
+    fileName: /src/index.tsx
+    content: "import React from \"react\";\nimport { createRoot } from 'react-dom/client';\nimport \"src/global.scss\";\nimport App from \"src/App\";\n\nconst container = document.getElementById('root') as HTMLElement;\nconst root = createRoot(container);\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n"
+  file16:
+    task: '@task1'
+    fileName: /src/contestants.ts
+    content: "export const contestants = [\n  {\n    name: \"The Joker\",\n    strength: 4,\n    intelligence: 8,\n    speed: 7,\n  },\n  {\n    name: \"Thanos\",\n    strength: 10,\n    intelligence: 5,\n    speed: 3,\n  },\n  {\n    name: \"General Zod\",\n    strength: 7,\n    intelligence: 9,\n    speed: 8,\n  },\n  {\n    name: \"Reacto\",\n    strength: 8,\n    intelligence: 6,\n    speed: 6,\n  },\n];\n"
+  file17:
+    task: '@task2'
+    fileName: /src/components/YourComponent/YourComponent.tsx
+    content: "import \"src/components/YourComponent/styles.scss\";"
+  file18:
+    task: '@task2'
+    fileName: /src/components/YourComponent/styles.scss
+    content: ""
+  file19:
+    task: '@task2'
+    fileName: /src/global.scss
+    content: "body, html { height: 100%; } #root {height: 100%; width: 100%; display: flex; flex-direction: column;}"
+  file20:
+    task: '@task2'
+    fileName: /public/index.html
+    content: <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" /></head><body><div id="root"/></body></html>
+  file21:
+    task: '@task2'
+    fileName: /tsconfig.json
+    content: '{"compilerOptions": {"baseUrl": ".","target": "es5","lib": ["dom","dom.iterable","esnext"],"allowJs": true,"skipLibCheck": true,"esModuleInterop": true,"allowSyntheticDefaultImports": true,"strict": true,"forceConsistentCasingInFileNames": true,"noFallthroughCasesInSwitch": true,"module": "esnext","moduleResolution": "node","resolveJsonModule": true,"isolatedModules": true,"noEmit": true,"jsx": "react-jsx"},"include": ["src"]}'
+  file22:
+    task: '@task2'
+    fileName: /src/App.tsx
+    content: "import \"bootstrap/dist/css/bootstrap.min.css\";\nimport \"src/global.scss\";\nimport { contestants } from \"src/contestants.ts\";\nimport { YourComponent } from \"src/components/YourComponent/YourComponent.tsx\";\n\nexport default function App() {\n  return <div>Room for your component</div>;\n}\n"
+  file23:
+    task: '@task2'
+    fileName: /src/index.tsx
+    content: "import React from \"react\";\nimport { createRoot } from 'react-dom/client';\nimport \"src/global.scss\";\nimport App from \"src/App\";\n\nconst container = document.getElementById('root') as HTMLElement;\nconst root = createRoot(container);\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n"
+  file24:
+    task: '@task3'
+    fileName: /src/components/FileUpload/FileUpload.tsx
+    content: "import \"src/components/FileUpload/styles.scss\";"
+  file25:
+    task: '@task3'
+    fileName: /src/components/FileUpload/styles.scss
+    content: ""
+  file26:
+    task: '@task3'
+    fileName: /src/global.scss
+    content: "body, html { height: 100%; } #root {height: 100%; width: 100%; display: flex; flex-direction: column;}"
+  file27:
+    task: '@task3'
+    fileName: /public/index.html
+    content: <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" /></head><body><div id="root"/></body></html>
+  file28:
+    task: '@task3'
+    fileName: /tsconfig.json
+    content: '{"compilerOptions": {"baseUrl": ".","target": "es5","lib": ["dom","dom.iterable","esnext"],"allowJs": true,"skipLibCheck": true,"esModuleInterop": true,"allowSyntheticDefaultImports": true,"strict": true,"forceConsistentCasingInFileNames": true,"noFallthroughCasesInSwitch": true,"module": "esnext","moduleResolution": "node","resolveJsonModule": true,"isolatedModules": true,"noEmit": true,"jsx": "react-jsx"},"include": ["src"]}'
+  file29:
+    task: '@task3'
+    fileName: /src/App.tsx
+    content: "import \"bootstrap/dist/css/bootstrap.min.css\";\nimport \"src/global.scss\";\nimport { contestants } from \"src/contestants.ts\";\nimport { YourComponent } from \"src/components/YourComponent/YourComponent.tsx\";\n\nexport default function App() {\n  return <div>Room for your component</div>;\n}\n"
+  file30:
+    task: '@task3'
+    fileName: /src/index.tsx
+    content: "import React from \"react\";\nimport { createRoot } from 'react-dom/client';\nimport \"src/global.scss\";\nimport App from \"src/App\";\n\nconst container = document.getElementById('root') as HTMLElement;\nconst root = createRoot(container);\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n"
+  file31:
+    task: '@task3'
+    fileName: /src/utils/readFileAsDataURL.ts
+    content: "export async function readFileAsDataURL(file: File): Promise<string> {\n  // your implementation goes here\n}\n"
+  file32:
+    task: '@task4'
+    fileName: /src/components/GalleryView/GalleryView.tsx
+    content: "import \"src/components/GalleryView/styles.scss\";"
+  file33:
+    task: '@task4'
+    fileName: /src/components/GalleryView/styles.scss
+    content: ""
+  file34:
+    task: '@task4'
+    fileName: /src/global.scss
+    content: "body, html { height: 100%; } #root {height: 100%; width: 100%; display: flex; flex-direction: column;}"
+  file35:
+    task: '@task4'
+    fileName: /public/index.html
+    content: <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" /></head><body><div id="root"/></body></html>
+  file36:
+    task: '@task4'
+    fileName: /tsconfig.json
+    content: '{"compilerOptions": {"baseUrl": ".","target": "es5","lib": ["dom","dom.iterable","esnext"],"allowJs": true,"skipLibCheck": true,"esModuleInterop": true,"allowSyntheticDefaultImports": true,"strict": true,"forceConsistentCasingInFileNames": true,"noFallthroughCasesInSwitch": true,"module": "esnext","moduleResolution": "node","resolveJsonModule": true,"isolatedModules": true,"noEmit": true,"jsx": "react-jsx"},"include": ["src"]}'
+  file37:
+    task: '@task4'
+    fileName: /src/App.tsx
+    content: "import \"bootstrap/dist/css/bootstrap.min.css\";\nimport \"src/global.scss\";\nimport { GalleryView } from \"src/components/GalleryView/GalleryView.tsx\";\n\nexport default function App() {\n  return <div>Room for your component</div>;\n}\n"
+  file38:
+    task: '@task4'
+    fileName: /src/index.tsx
+    content: "import React from \"react\";\nimport { createRoot } from 'react-dom/client';\nimport \"src/global.scss\";\nimport App from \"src/App\";\n\nconst container = document.getElementById('root') as HTMLElement;\nconst root = createRoot(container);\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n"

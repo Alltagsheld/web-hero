@@ -1,0 +1,23 @@
+@import "src/assets/scss/reusableClasses.scss";
+@import "src/assets/scss/variables.module.scss";
+
+.container {
+    @extend .flexContainer;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 1em;
+}
+
+.editorTitle {
+    @extend .flexContainer;
+    justify-content: space-between;
+    padding: 0.5em 2em 0.5em 2em;
+    background-color:  #212529;
+    color: white;
+    width: 100%;
+}
+.codeMirrorWrapper {
+    width: 100%;
+    height: 100%;   
+}
